@@ -1,0 +1,246 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li, a {
+  margin: 0;
+  padding: 0;
+}
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1a1a1a; /* Dirty black color */
+  color: #333;
+}
+
+/* Additional styles for grainy background */
+.header {
+  text-align: center;
+  padding: 60px 0;
+  background-color: #1a1a1a;
+/*  background-image: radial-gradient(circle, #ffffff 1px, transparent 1px);
+  background-size: 5px 5px; /* Adjust the size as needed */
+}
+
+.logo-container {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.logo {
+  width: 50px; /* Adjust the width as needed */
+  height: auto;
+}
+
+.dot {
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  background-color: #ff8c00;
+  border-radius: 50%;
+  pointer-events: none; /* Prevents dots from blocking interaction */
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  animation: moveAround 10s linear infinite;
+}
+
+@keyframes moveAround {
+  0% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(100px, -100px);
+    opacity: 0;
+  }
+
+  /* Additional styles for logo */
+
+  .title.clicked {
+  animation: clickEffect 0.3s linear alternate;
+}
+
+@keyframes clickEffect {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(5px);
+  }
+}
+
+@keyframes upDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.header .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: bounceUpDown 2s infinite alternate;
+}
+
+@keyframes bounceUpDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+  
+/*.title {
+  font-size: 36px;
+  color: #fff;
+  display: inline-block;
+  position: relative;
+  animation: upDown 2s infinite alternate;
+}
+
+.animated-text {
+  position: relative;
+  display: inline-block;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}*/
+
+.subtitle {
+  font-size: 18px;
+  color: #ccc;
+  margin-top: 10px;
+}
+
+/* Navigation */
+.nav {
+  background-color: #1a1a1a;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 20px;
+  transition: background-color 0.3s;
+}
+
+.nav-link:hover {
+  background-color: #333;
+}
+
+/* Main content */
+.main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* About section */
+.about-title {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.description-container {
+  display: flex;
+  align-items: center;
+}
+
+.description-text {
+  flex: 1;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border-radius: 5px;
+}
+
+.guild-description {
+  font-size: 18px;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.guild-name {
+  color: #ff8c00;
+  font-weight: bold;
+}
+
+.description-image {
+  flex: 1;
+  text-align: center;
+}
+
+.description-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Members section */
+.member-card {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Events section */
+.event-card {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact section */
+.contact-form {
+  text-align: center;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #1a1a1a;
+  color: #fff;
+}
+
+.footer-text {
+  font-size: 14px;
+}
+
+/* Additional styles for animation */
+@keyframes hoverEffect {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-5px);
+  }
+}
+
+.title:hover {
+  animation: hoverEffect 0.3s infinite alternate;
+}

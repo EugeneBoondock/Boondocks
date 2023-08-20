@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boondocks Guild</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    window.addEventListener('load', () => {
+      const header = document.querySelector('.header');
+      const dotCount = 100; // Number of dots to generate
+      
+      for (let i = 0; i < dotCount; i++) {
+        const dot = document.createElement('div');
+        dot.classList.add('dot');
+        dot.style.left = `${Math.random() * 100}%`;
+        dot.style.top = `${Math.random() * 100}%`;
+        dot.style.animationDelay = `${Math.random() * 5}s`; // Random delay for animation
+        header.appendChild(dot);
+      }
+    });
+  </script>
+</head>
+<body>
+  <header class="header">
+    <div class="logo-container">
+      <img src="logo.png" alt="Boondocks Guild Logo" class="logo">
+    </div>
+    <h1 class="title">
+      <span class="animated-text">Welcome to the</span>
+      <span class="animated-text subtitle">Boondocks Guild</span>
+    </h1>
+    <p class="subtitle">Embark on Epic Adventures and Forge Lasting Bonds</p>
+  </header>
+
+  <nav class="nav">
+    <ul class="nav-list">
+      <li><a href="#" hx-get="/about" class="nav-link" hx-target="#main-content" hx-swap="outerHTML">About Us</a></li>
+      <li><a href="#" hx-get="/members" class="nav-link" hx-target="#main-content" hx-swap="outerHTML">Members</a></li>
+      <li><a href="#" hx-get="/events" class="nav-link" hx-target="#main-content" hx-swap="outerHTML">Events</a></li>
+      <li><a href="#" hx-get="/contact" class="nav-link" hx-target="#main-content" hx-swap="outerHTML">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main id="main-content" class="main" hx-trigger="revealed">
+    <section id="about" hx-target="#main-content" hx-swap="outerHTML">
+      <div class="about-content">
+        <h2 class="about-title">Boondocks Guild</h2>
+        <div class="description-container">
+          <div class="description-text">
+            <p class="guild-description">
+              The <span class="guild-name">Boondocks guild</span> is your gateway to a world of endless possibilities and collaborations. Our journey is fueled by the passion for adventure and community-driven progress. By granting players the power to shape territories and wield authority through voting and proposals, we foster a realm where every voice matters.
+            </p>
+            <p class="guild-description">
+              <span class="guild-name">Boondocks Guild</span> aspires to be the epitome of a democratic guild within the Earth 2 metaverse. The path to creation lies in proposals and communal votes, ensuring that every decision reflects our united vision. In this autonomous realm, we empower voters to navigate without the need for traditional leadership structures.
+            </p>
+            <p class="guild-description">
+              Welcome to the embrace of the <span class="guild-name">Boondocks Guild</span>. An environment where players of all statures become pioneers of their fate, where unity is the catalyst for innovation, and where every step ventures further into the extraordinary. Join us and mark your name in the tapestry of legends.
+            </p>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="footer-text">&copy; 2023 Boondocks Guild. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/htmx.org@1.6.0/dist/htmx.js"></script>
+</body>
+</html>
