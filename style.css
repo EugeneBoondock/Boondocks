@@ -21,6 +21,7 @@ body {
   position: absolute;
   top: 10px;
   left: 10px;
+  transition: background-image 0.3s ease-in-out;
 }
 
 .logo {
@@ -237,3 +238,7 @@ body {
 .about-title:hover {
   color: #ff8c00;
 }
+
+/*.logo-container:hover .logo-2 {
+  display: inline;
+}*/
