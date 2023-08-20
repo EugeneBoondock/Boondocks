@@ -239,6 +239,6 @@ body {
   color: #ff8c00;
 }
 
-/*.logo-container:hover .logo-2 {
-  display: inline;
-}*/
+body {
+  overflow: hidden;
+}
