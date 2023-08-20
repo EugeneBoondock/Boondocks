@@ -8,16 +8,13 @@ body, h1, h2, h3, p, ul, li, a {
 body {
   font-family: Arial, sans-serif;
   background-color: #1a1a1a; /* Dirty black color */
-  color: #333;
+  color: #fff;
 }
 
 /* Additional styles for grainy background */
 .header {
   text-align: center;
   padding: 60px 0;
-  background-color: #1a1a1a;
-/*  background-image: radial-gradient(circle, #ffffff 1px, transparent 1px);
-  background-size: 5px 5px; /* Adjust the size as needed */
 }
 
 .logo-container {
@@ -27,8 +24,9 @@ body {
 }
 
 .logo {
-  width: 50px; /* Adjust the width as needed */
+  width: 80px; /* Adjust the width as needed */
   height: auto;
+  border-radius: 30px;
 }
 
 .dot {
@@ -51,11 +49,11 @@ body {
   100% {
     transform: translate(100px, -100px);
     opacity: 0;
-  }
+  }}
 
   /* Additional styles for logo */
 
-  .title.clicked {
+.title.clicked {
   animation: clickEffect 0.3s linear alternate;
 }
 
@@ -94,8 +92,9 @@ body {
 }
 
   
-/*.title {
+.title {
   font-size: 36px;
+  padding: 50px;
   color: #fff;
   display: inline-block;
   position: relative;
@@ -151,8 +150,8 @@ body {
   max-width: 800px;
   margin: 0 auto;
   padding: 30px;
-  background-color: #fff;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  background-color: transparent;
+  box-shadow: 0px 0px 10px rgba(1, 1, 1, 0.1);
 }
 
 /* About section */
@@ -169,8 +168,9 @@ body {
 .description-text {
   flex: 1;
   padding: 20px;
-  background-color: #f7f7f7;
-  border-radius: 5px;
+  background-color: transparent;
+  border: 2px solid;
+  border-radius: 15px;
 }
 
 .guild-description {
@@ -182,18 +182,6 @@ body {
 .guild-name {
   color: #ff8c00;
   font-weight: bold;
-}
-
-.description-image {
-  flex: 1;
-  text-align: center;
-}
-
-.description-image img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 5px;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 /* Members section */
@@ -243,4 +231,9 @@ body {
 
 .title:hover {
   animation: hoverEffect 0.3s infinite alternate;
+  color: #ff8c00;
+}
+
+.about-title:hover {
+  color: #ff8c00;
 }
