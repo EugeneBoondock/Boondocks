@@ -7,6 +7,7 @@ Welcome to the Boondocks Guild!
 - [Members](#members)
 - [Events](#events)
 - [Contact](#contact)
+- [Discord Server](https://discord.gg/SBTj2aAjRM)
 
 ---
 
